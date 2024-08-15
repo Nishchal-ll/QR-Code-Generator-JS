@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="bg-slate-900">
+    <div class="container lg bg-white w-96  rounded-xl mt-48 mx-auto px-5 py-5">
+                <h1 class="text-black font-bold italic text-3xl text-center pt-2">
+                    QR Generator
+                </h1>
+                <p class="text-black font-semibold pl-3 pt-4">
+                    Enter you text or URL
+                </p>
+                <form id="form" action="#">
+                <input id="qtext" class=" rounded-md ml-3 pl-2 mt-3 w-64 h-9 bg-slate-200 outline-none text-sm" type="text"
+                    placeholder="Text/URL"><br>
+                <div id="showqqr" class=" ml-3 mt-2  ">
+                    <img  src="" id="qrimg">
+            </div>
+                <button id="btn" onclick="showqr()"
+                class=" w-32 ml-3 rounded-xl h-9 transition ease-in-out delay-150 bg-blue-500 mt-3  hover:bg-indigo-500 "
+                type="submit">Generate QR</button>
+    
+                <button id="btn1" onclick="resetqr()"
+                class=" w-24 ml-3 rounded-xl h-9 transition ease-in-out delay-150 bg-blue-500  hover:bg-indigo-500 "
+                type="submit">Reset QR</button>
+            </form> 
+   <script src="./sscript.js"></script>
+</body>
+
+</html>
