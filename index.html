@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Generator</title>
     <script src="https://cdn.tailwindcss.com"></script>
+       <script src="./sscript.js"></script>
     <style>
         body {
             font-family: 'Josefin Sans', sans-serif;
@@ -36,20 +37,7 @@
                 class=" w-24 ml-3 rounded-xl h-9 transition ease-in-out delay-150 bg-blue-500  hover:bg-indigo-500 "
                 type="submit">Reset QR</button>
             </form> 
-    <script>
-        let qtext = document.getElementById('qtext');
-        let qimg = document.getElementById('qrimg');
-       
-        function showqr() {
-            qrimg.src = " https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+qtext.value;
-           
-                  }
-
-        function resetqr() {
-            document.getElementById('form').reset();
-            qrimg.src="";
-                          }          
-    </script>
+  
 </body>
 
 </html>
